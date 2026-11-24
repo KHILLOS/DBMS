@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# MED Health Locker — SPA; public routes below, everything under /api is private
+Sitemap: /sitemap.xml

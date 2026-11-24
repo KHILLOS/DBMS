@@ -1,0 +1,1 @@
+import{u as e}from"./vendor-motion-BSUjzvDD.js";import{t}from"./AuthPage--juWuzy8.js";var n=e();function r(){return(0,n.jsx)(t,{mode:`register`})}export{r as default};

@@ -1,0 +1,20 @@
+[Unit]
+Description=MED Health Locker (production)
+After=network.target
+
+[Service]
+Type=simple
+# EDIT: path jahan tumne website extract ki (default /opt/med-website)
+WorkingDirectory=/opt/med-website
+Environment=NODE_ENV=production
+Environment=PORT=3001
+# JWT_SECRET .env file se aayega — use WorkingDirectory mein banao
+EnvironmentFile=-/opt/med-website/.env
+ExecStart=/usr/bin/env node server/index.js
+Restart=always
+RestartSec=3
+# 1GB RAM VM ke liye halka guard
+MemoryMax=450M
+
+[Install]
+WantedBy=multi-user.target

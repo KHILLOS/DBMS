@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16260F"/>
+      <stop offset="0.55" stop-color="#101C0B"/>
+      <stop offset="1" stop-color="#0B120A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A8D97E"/>
+      <stop offset="1" stop-color="#CBE8A0"/>
+    </linearGradient>
+    <linearGradient id="cross" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7CB342"/>
+      <stop offset="1" stop-color="#365B1B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#A8D97E" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#A8D97E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- grass silhouette along the bottom -->
+  <g fill="#A8D97E" opacity="0.25">
+    <path d="M60 630 Q54 560 58 520 Q68 560 74 630 Z"/>
+    <path d="M120 630 Q112 545 117 505 Q130 548 136 630 Z"/>
+    <path d="M185 630 Q180 570 183 540 Q191 572 196 630 Z"/>
+    <path d="M1040 630 Q1033 555 1038 512 Q1050 556 1056 630 Z"/>
+    <path d="M1105 630 Q1099 570 1103 538 Q1112 572 1117 630 Z"/>
+    <path d="M985 630 Q980 585 983 560 Q990 586 994 630 Z"/>
+  </g>
+
+  <!-- logo mark -->
+  <rect x="88" y="88" width="96" height="96" rx="26" fill="url(#cross)"/>
+  <rect x="90" y="90" width="92" height="92" rx="25" fill="none" stroke="#CBE8A0" stroke-opacity="0.4" stroke-width="2"/>
+  <path d="M136 112v48M112 136h48" stroke="#F7FAF0" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- wordmark -->
+  <text x="212" y="132" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#E6F2D8" letter-spacing="2">MED</text>
+  <text x="212" y="166" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="600" fill="#8FA378" letter-spacing="6">HEALTH LOCKER</text>
+
+  <!-- headline -->
+  <text x="88" y="330" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="bold" fill="#E6F2D8">Your health,</text>
+  <text x="88" y="406" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="bold" fill="url(#accent)">locked to you.</text>
+
+  <!-- subline -->
+  <text x="88" y="474" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#AFC49A">Private medical report locker · PDF, JPG, PNG</text>
+
+  <!-- chips -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="600">
+    <rect x="88" y="516" width="150" height="46" rx="23" fill="#16260F" stroke="#24331B"/>
+    <text x="118" y="545" fill="#A8D97E">Private</text>
+    <rect x="256" y="516" width="190" height="46" rx="23" fill="#16260F" stroke="#24331B"/>
+    <text x="286" y="545" fill="#A8D97E">On-server</text>
+    <rect x="464" y="516" width="210" height="46" rx="23" fill="#16260F" stroke="#24331B"/>
+    <text x="494" y="545" fill="#A8D97E">Honest AI</text>
+  </g>
+
+  <!-- ekg line -->
+  <path d="M760 470 h90 l18 -34 22 62 24 -78 22 50 h88" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+</svg>
